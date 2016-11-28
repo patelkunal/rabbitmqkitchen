@@ -1,0 +1,5 @@
+rootProject.name = 'rabbitmqkitchen'
+include 'core'
+include 'cli-listener'
+include 'webservice'
+
