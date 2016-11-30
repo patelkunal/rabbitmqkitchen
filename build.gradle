@@ -37,6 +37,7 @@ subprojects {
     dependencies {
         compile 'org.slf4j:jcl-over-slf4j:1.7.21'
         compile 'ch.qos.logback:logback-classic:1.1.7'
+        compile 'com.google.guava:guava:20.0'
         testCompile 'junit:junit:4.12'
     }
 }
