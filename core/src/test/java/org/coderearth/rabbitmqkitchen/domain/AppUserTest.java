@@ -1,4 +1,4 @@
-package org.coderearth.rabbitmqkitchen.webservice.domain;
+package org.coderearth.rabbitmqkitchen.domain;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;

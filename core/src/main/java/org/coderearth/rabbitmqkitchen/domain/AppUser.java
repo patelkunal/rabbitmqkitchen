@@ -1,4 +1,4 @@
-package org.coderearth.rabbitmqkitchen.webservice.domain;
+package org.coderearth.rabbitmqkitchen.domain;
 
 import com.google.common.base.MoreObjects;
 
