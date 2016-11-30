@@ -15,7 +15,7 @@ import java.util.concurrent.TimeoutException;
  */
 public class HelloProducer {
 
-    private static final String EXCHANGE_NAME = "coderexchange";
+    private static final String EXCHANGE_NAME = "helloexchange";
     private static final Logger LOGGER = LoggerFactory.getLogger(HelloProducer.class);
 
     private final ConnectionFactory connectionFactory;
