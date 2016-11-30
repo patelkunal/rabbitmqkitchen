@@ -38,6 +38,23 @@ subprojects {
         compile 'org.slf4j:jcl-over-slf4j:1.7.21'
         compile 'ch.qos.logback:logback-classic:1.1.7'
         compile 'com.google.guava:guava:20.0'
+        compile 'com.fasterxml.jackson.core:jackson-databind:2.8.4'
         testCompile 'junit:junit:4.12'
+    }
+}
+
+
+configure([project(":cli-listener"), project(":webservice")]) {
+    buildscript {
+        dependencies {
+            classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.2.RELEASE")
+        }
+        repositories {
+            mavenCentral()
+        }
+    }
+
+    dependencies {
+        compile project(path: ':core')
     }
 }

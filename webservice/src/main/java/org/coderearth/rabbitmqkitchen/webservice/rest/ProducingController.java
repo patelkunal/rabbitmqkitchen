@@ -33,10 +33,10 @@ public class ProducingController {
             consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE
     )
     protected ResponseEntity<Map<String, String>> addUser(@RequestBody final AppUser user) throws JsonProcessingException {
-        LOGGER.debug("=================== INCOMING REQUEST FOR user.id = {} ========================", user.getId());
+        LOGGER.trace("=================== INCOMING REQUEST FOR user.id = {} ========================", user.getId());
         LOGGER.debug(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(user));
         ImmutableMap<String, String> respMap = ImmutableMap.of("message", "user addition is accepted !!");
-        LOGGER.debug("=================== SERVED INCOMING REQUEST FOR user.id = {} ========================", user.getId());
+        LOGGER.trace("=================== SERVED INCOMING REQUEST FOR user.id = {} ========================", user.getId());
         return new ResponseEntity<>(respMap, HttpStatus.ACCEPTED);
     }
 
